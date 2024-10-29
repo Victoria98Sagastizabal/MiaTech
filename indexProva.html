@@ -6,21 +6,27 @@ Prova html
 
 <body>
 
-  <h1> LabelS</h1>
+  <h1>Label</h1>
 
   <form action="/action_page.php">
 
-    <label for="fname">First name:</label>
+    <label for="fname" autocomplete="on" required>First name:</label>
   <br>
-    <label for="lname">Last name:</label>
+    <label for="lname" autocomplete="on" required>Last name:</label>
   <br>
-    <input type="email"> "Your email"
+    <input type="email" autocomplete="off" required> "Your email">
   <br>
-    <input type="checkbox"> "I am over 16 years old"
+  br>
+    <input type="tel"  name="phone number" autocomplete="off" minlength="9" maxlength="15">
   <br>
-  <input type="checkbox"> "I want to receive information about related events"
+    <input type="number" name="age" min="16" max="100" step="1" required>
+  <br>
+    <input type="checkbox"> "I want to receive information about related events by email"
   <br>    
-
+    <input type="checkbox" required> "I agree to the Privacy Policy & I have read and agree to the Terms"
+  <br>
+    <input type="submit" value="Accept and Submit" required>
+  <br>
 </form>
 
 </body>
