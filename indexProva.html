@@ -9,24 +9,30 @@ Prova html
   <h1>Label Info</h1>
 
   <form action="/action_page.php" method="get">
+    <div>
+      <label for="fname" autocomplete="on" required>First name:</label>
+      <input type="text" name="fname" required>
+    </div>
+    <div>
+      <label for="lname" autocomplete="on">Last name:</label>
+      <input type="text" name="lname" required>
+    </div>
 
-    <label for="fname" autocomplete="on" required>First name:</label>
-  <br>
-    <label for="lname" autocomplete="on" required>Last name:</label>
-  <br>
-    <input type="email" autocomplete="off" required> "Your email">
-  <br>
-  br>
+    <div>
+    <input type="email" autocomplete="off" name="email" required> "Your email">
+    </div>
+    <div>
     <input type="tel"  name="phone number" autocomplete="off" minlength="9" maxlength="15">
-  <br>
+    </div>
     <input type="number" name="age" min="16" max="100" step="1" required>
   <br>
-    <input type="checkbox"> "I want to receive information about related events by email"
+    <input type="checkbox" name="checkbox"> "I want to receive information about related events by email"
   <br>    
-    <input type="checkbox" required> "I agree to the Privacy Policy & I have read and agree to the Terms"
+    <input type="checkbox" name="checkbox"> required> "I agree to the Privacy Policy & I have read and agree to the Terms"
   <br>
      <input type="submit" value="Submit">
   <br>
+
 
 </form>
 
